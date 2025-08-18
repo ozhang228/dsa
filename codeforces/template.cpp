@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+struct pair_hash {
+  inline std::size_t operator()(const std::pair<int, int> &v) const {
+    return v.first * 31 + v.second;
+  }
+};
+
 #define ll long long
 #define pii pair<int, int>
 #define pll pair<long long, long long>
