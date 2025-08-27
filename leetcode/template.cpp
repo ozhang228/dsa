@@ -10,13 +10,3 @@ struct pair_hash {
 /**
 
 **/
-
-class Solution {
-public:
-  void function() {}
-};
-
-int main() {
-  Solution s{};
-  return 0;
-}
