@@ -7,6 +7,19 @@ struct pair_hash {
   }
 };
 
+void printvi(vector<int> v) {
+  printf("[");
+
+  for (int i = 0; i < v.size(); ++i) {
+    printf("%d", v[i]);
+
+    if (i != v.size() - 1) {
+      printf(",");
+    }
+  }
+  printf("]");
+}
+
 /**
 
 **/
