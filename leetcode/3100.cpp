@@ -19,3 +19,22 @@ void printvi(vector<int> v) {
   }
   printf("]");
 }
+
+/**
+
+**/
+
+class Solution {
+public:
+  int maxBottlesDrunk(int numBottles, int numExchange) {
+    int bottles{numBottles};
+
+    while (numBottles >= numExchange) {
+      bottles += 1;
+      numBottles -= numExchange;
+      numBottles += 1;
+      numExchange += 1;
+    }
+    return bottles;
+  }
+};
