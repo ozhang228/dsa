@@ -18,10 +18,6 @@ template <class T> void print_v(vector<T> &v) {
   cout << "\b}\n";
 }
 
-template <class T> void print_p(pair<T, T> &v) {
-  cout << "{" << v.f << "," << v.s << "}\n";
-}
-
 void solve() {}
 
 int main() {
